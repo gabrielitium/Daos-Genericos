@@ -9,7 +9,7 @@ USE `daos_genericos` ;
 -- Table `daos_genericos`.`cursos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `daos_genericos`.`cursos` (
-  `idcurso` INT NOT NULL,
+  `idcurso` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idcurso`))
 ENGINE = InnoDB;
@@ -19,7 +19,7 @@ ENGINE = InnoDB;
 -- Table `daos_genericos`.`alumnos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `daos_genericos`.`alumnos` (
-  `idalumno` INT NOT NULL,
+  `idalumno` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `direccion` VARCHAR(45) NOT NULL,
   `grado` VARCHAR(45) NOT NULL,
