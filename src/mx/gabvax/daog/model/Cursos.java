@@ -51,7 +51,7 @@ public class Cursos implements java.io.Serializable {
 		this.idcurso = idcurso;
 	}
 
-	@Column(name = "nombre", nullable = false, length = 45)
+	@Column(name = "nombre", nullable = false, length = 45, columnDefinition = "LONGBLOB")
 	public String getNombre() {
 		return this.nombre;
 	}

@@ -43,7 +43,7 @@ public class GenericDaoImpl<Entity, K extends Serializable> implements GenericDa
     getHibernateTemplate().save(t);
     session.getTransaction().commit();
    } catch (HibernateException e) {
-    throw new UnableToSaveException(e);
+   throw new UnableToSaveException(e);
    }
  }
 public void Modificar(Entity t) throws UnableToSaveException {
